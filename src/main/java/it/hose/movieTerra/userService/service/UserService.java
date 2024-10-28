@@ -1,10 +1,10 @@
-package it.hose.movieTerra.userService.service.impl;
+package it.hose.movieTerra.userService.service;
 
 import it.hose.movieTerra.userService.dto.UserRegisterRequestDto;
 import it.hose.movieTerra.userService.model.User;
 
 public interface UserService {
-    Boolean isExists(Long id);
+    Boolean isExists(String id);
 
     void add(UserRegisterRequestDto userRegisterRequestDto);
 
